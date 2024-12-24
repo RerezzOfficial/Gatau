@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Server Panel</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Create Server Panel</h1>
+  <form id="buat-server-form">
+    <label>Username:</label>
+    <input type="text" id="username" required><br><br>
+    <label>Password:</label>
+    <input type="password" id="password" required><br><br>
+    <label>Paket Server:</label>
+    <select id="paket" required>
+      <option value="1gb">1GB RAM, 1 CPU, Unlimited Disk</option>
+      <option value="2gb">2GB RAM, 2 CPU, Unlimited Disk</option>
+      <option value="4gb">4GB RAM, 4 CPU, Unlimited Disk</option>
+    </select><br><br>
+    <button id="buat-server-btn">Buat Server</button>
+  </form>
+
+  <form id="buat-admin-form">
+    <label>Username:</label>
+    <input type="text" id="admin-username" required><br><br>
+    <label>Password:</label>
+    <input type="password" id="admin-password" required><br><br>
+    <label>Email:</label>
+    <input type="email" id="admin-email" required><br><br>
+    <button id="buat-admin-btn">Buat Admin</button>
+  </form>
+
+  <div id="hasil-server"></div>
+  <div id="hasil-admin"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
